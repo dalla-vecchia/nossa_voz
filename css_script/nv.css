@@ -1,0 +1,238 @@
+body{
+	font-family: Arial,sans-serif;
+	color: #333333;
+	line-height: 1.166;	
+	margin: 0px;
+	padding: 0px;
+}
+
+a:link, a:visited, a:hover {
+	color: #006699;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+/* overrides decoration from previous rule for hovered links */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial,sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{
+ font-family: Verdana,Arial,sans-serif;
+ font-size: 120%;
+ color: #334d55;
+}
+
+h2{
+ font-size: 114%;
+ color: #006699;
+}
+
+h3{
+ font-size: 100%;
+ color: #334d55;
+}
+
+h4{
+ font-size: 100%;
+ font-weight: normal;
+ color: #333333;
+}
+
+h5{
+ font-size: 100%;
+ color: #334d55;
+}
+
+ul{
+ list-style-type: square;
+}
+
+ul ul{
+ list-style-type: disc;
+}
+
+ul ul ul{
+ list-style-type: none;
+}
+
+label{
+ font: bold 100% Arial,sans-serif;
+ color: #334d55;
+}
+				
+
+/***********************************************/
+/* Layout Divs                                 */
+/***********************************************/
+
+#content{
+	/**position: relative;
+	float: left;  removed because IE 5.5*/
+	margin-left: 15.1%;
+	padding: 0px;
+	width: 70%;
+}
+
+.copy{
+	text-indent: 7%;
+}
+
+
+/***********************************************/
+/*Component Divs                               */
+/***********************************************/
+
+#siteName{
+	margin: 0px;
+	padding: 0px 0px 10px 10px;
+}
+
+/*************** #pageName styles **************/
+
+#pageName{
+	padding: 0px 0px 0px 0px;
+}
+
+#titulo{ 
+	font-style:italic;
+	font-size:90%;
+}
+
+#corpotexto{
+	font-size: 100%;
+}
+
+
+/************** .feature styles ***************/
+
+.feature{
+	padding: 0px 0px 0px 0px;
+	font-size: 80%;
+}
+
+.feature h3{
+	padding: 0px 0px 5px 0px;
+	text-align: center;
+}
+
+.feature img{
+	float: left;
+	padding: 0px 10px 0px 0px;
+	margin: 0 0px 0px 0;
+}
+/* adjust margins to change separation between the feature image and text flowing around it */
+
+
+/************* #siteInfo styles ***************/
+
+#siteInfo{
+	clear: both;
+	font-size: 75%;
+	color:#0000FF;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2em;
+	border-top: 2px solid blue;
+}
+
+/*********** .relatedLinks styles ***********/
+
+.relatedLinks{
+	position:relative;
+	border-top: 1px solid #cccccc;
+	margin: 0px;
+	padding: 0px 0px 10px 10px;
+	font-size: 73%;
+	width:100px;
+}
+
+.relatedLinks h3{
+	padding: 10px 0px 2px 0px;
+}
+
+
+/*****************************************/
+/*****************************************/
+/********** DEFINITION FOR MENU **********/
+/*****************************************/
+/*****************************************/
+
+.basictab{
+float: none;
+padding: 3px 0;
+margin-left: 5%;
+margin-right: 5%;
+font: bold 12px Verdana;
+list-style-type:square;
+border-bottom: 2px solid blue;
+margin-bottom: 0px;
+text-align: center; /*set to left, center, or right to align the menu as desired*/
+}
+
+.basictab li{
+display: inline;
+margin: 0;
+}
+
+.basictab li a{
+text-decoration: none;
+padding: 3px 7px;
+margin-right: 2px;
+border: 1px solid gray;
+border-bottom: none;
+background-color: white;
+color: black;
+}
+
+
+.basictab li a:visited{
+color: black;
+}
+
+.basictab li a:hover{
+background-color: #dbffff;
+color: black;
+}
+
+.basictab li a:active{
+color: black;
+}
+
+.basictab li.selected a{ /*selected tab effect*/
+position: relative;
+top: 1px;
+padding-top: 4px;
+background-color: #dbffff;
+color: black;
+}
+
+.h1NextShow {
+	font-size: 150%; 
+	line-height: 1.1;
+	text-align: center;
+	font-weight: normal;
+}
+
+/********** VIDEO COMPATIBILITY IN ALL BRAOWSERS **********/
+html object.hide {
+   display: none;
+}
+
+/** **/
+.image {float: left; border: none; margin: 0 1em 0 0;}
+.image.right {float: right; margin: 0 0 0 1em;}
+.image img {border: none;}
+
+.iframe-container { padding: 1em; background: white;}
+.biglink { font-size: 170%; font-weight: bold; border: 1px dashed #888; 
+    text-align: center; background-color: #ddd;
+    padding: .2em; margin: 1em 20px 1em 420px; }
+.padtop { padding: 0em 0 }
+.padtop p { margin: 0; }
+small { font-size: 60%; font-color: #777; }

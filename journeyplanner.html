@@ -1,0 +1,30 @@
+	<div>
+	TFL Journey Planner directions
+	<form action="http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2" method="POST" style="margin: .5em 0 0 0; padding:0">
+			<label for='name_origin' style="float:left">From:</label><div style="float:left">
+		<input type='hidden' name='execInst' />	
+		<input type='hidden' name='language' value='en' />
+		<input type='hidden' name='name_destination' value='NW1 7HJ' />
+		<input type='hidden' name='place_destination' value='London' />
+		<input type='hidden' name='place_origin' value='London' />
+		<input type='hidden' name='ptOptionsActive' value='-1' />
+		<input type='hidden' name='sessionID' value='0' />
+		<input type='hidden' name='type_destination' value='locator' />
+		<input type='text' name='name_origin' value='' />
+		<input type='hidden' name='itdDateDay' value='15' />
+		<input type='hidden' name='itdDateYearMonth' value='200812' />
+		<input type='hidden' name='itdTimeHour' value='19' />
+		<input type='hidden' name='itdTimeMinute' value='15' />
+		<input type='hidden' name='itdTripDateTimeDepArr' value='arr' />
+		<br/>
+		<select id="type_destination" name="type_origin" style="font-size: 60%">
+		<option value="stop">Station or stop</option>
+		<option value="locator" selected="selected">Post code</option>
+		<option value="address">Address</option>
+		<option value="poi">Place of interest</option>
+		</select></div>
+		<input style="float:left; margin: 0 0 0 .5em" type='submit' value='Get directions' />
+    </form>		
+	</div>
+	<br clear="both"/>
+	<br clear="both"/>

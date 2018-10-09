@@ -1,0 +1,163 @@
+/**
+
+#thumbnails {
+width: 700px;
+margin: 0 0 0 0px;
+}
+
+#thumbnails img {
+float: left;
+border: 1px solid #888888;
+margin: 0 10px 10px 0;
+}
+
+.separator {
+clear: both;
+height: 0;
+}
+
+.logo {
+margin: 0 auto 0 auto;
+width: 700px;
+}
+.logo img {
+margin: 0 0 -27px -64px;
+position: relative;
+}
+
+#textContainer {
+width: 433px;
+margin: 0 auto;
+}
+h1, p {
+color: #2b2b2b;
+}
+h1 {
+font: normal 110% Arial, sans-serif;
+text-transform: uppercase;
+margin: 0;
+}
+p {
+font-size: 85%;
+margin: 0 0 1em;
+}
+
+#frameBorder,#frameBackground,#displayArea {
+left: 10%; /** 50% */
+/*top: 10%;  /** 50% */
+/*position: absolute;
+}
+
+#frameBorder {
+float: inherit; /* Property to test position on Internet Explorer */
+/*width: 560px;
+margin-left: 0px; /** Value 0 to center horizontaly */
+/*height: 460px;
+margin-top: -100px; /** Value -100 to center verticaly */
+/*background-color: #000000;
+z-index: 1;
+}
+
+#frameBackground {
+width: 530px;
+margin-left: -45px; /** -270px */
+/*height: 430px;
+margin-top: -37px; /** -220px */
+/*background-color: #f5f0e1;
+border-left: 5px solid #e5e2d3;
+border-top: 5px solid #e5e2d3;
+border-right: 5px solid #f5f0e1;
+border-bottom: 5px solid #f5f0e1;
+}
+
+#displayArea {
+width: 400px;
+height: 300px;
+margin-left: 10px; /** -200px */
+/*margin-top:  20px; /** -150px */
+/*}
+
+#displayArea img {
+border-top: 2px solid #e5e2d3;
+border-left: 2px solid #e5e2d3;
+border-bottom: 2px solid #ffffff;
+border-right: 2px solid #ffffff;
+margin-bottom: 1em;
+}
+
+#frameBorder p {
+text-align: right;
+font: 10px Arial, sans-serif;
+color: #888888;
+}
+
+#caption, #credit {
+font-weight: bold;
+color: #555555;
+}
+
+p#closeWidget {
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -210px;
+margin-left: 210px;
+width: 50px;
+}
+#closeWidget img {
+border: 0;
+margin: 0 0 -1px;
+}
+
+a {
+text-decoration: none;
+color: #333333;
+}
+a:hover {
+text-decoration: underline;
+}*/
+
+
+.gallerycontainer{
+position: relative;
+left: 130px;
+width: 700px;
+/*Add a height attribute and set to largest image's height to prevent overlaying*/
+}
+
+#thumbnails { 
+ height: 400px;
+ width: 350px;
+ overflow: auto;
+}
+.thumbnail img{
+border: 1px solid white;
+margin: 0 5px 5px 0;
+}
+
+.thumbnail:hover{
+background-color: transparent;
+}
+
+.thumbnail span{ /*CSS for enlarged image*/
+position: absolute;
+padding: 10px;
+background-color: white;
+left: -1000px;
+visibility: hidden;
+text-align:center;
+color: green;
+text-decoration: none;
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+border-width: 1px;
+padding: 2px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image*/
+visibility: visible;
+top: 0px;
+left: 360px; /*position where enlarged image should offset horizontally */
+z-index: 50;
+}
